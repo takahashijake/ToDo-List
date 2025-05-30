@@ -12,8 +12,19 @@ Thumbs.db
 
 # Ignore log files
 *.log
+
+# Ignore bash scripts (already there, but clarifying)
 *.sh
-*.app
+
+# Ignore common executable files (added/clarified)
+*.exe     # Windows executables
+*.dll     # Windows dynamic link libraries
+*.so      # Linux shared objects/libraries
+*.dylib   # macOS dynamic libraries
+*.app/    # macOS applications (already there, but clarifying - treats .app as a directory)
+* # This line was problematic for you previously, so I've removed it
+          # If you truly want to ignore everything by default and re-include,
+          # you'd need ! rules below it. For most projects, explicit ignores are better.
 
 # Ignore environment variables file
 .env
@@ -22,3 +33,13 @@ Thumbs.db
 .idea/
 *.iml
 .vscode/
+
+run
+MakeFile
+tasks.o
+remove
+main.o
+fltk_app
+basic_fltk_app copy
+basic_fltk_app
+# Add any other specific executables or temporary files here if needed
