@@ -1,0 +1,24 @@
+# Ignore node_modules directory (for Node.js projects)
+node_modules/
+
+# Ignore build output directory (common in many projects)
+build/
+dist/
+out/
+
+# Ignore operating system generated files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+*.sh
+*.app
+
+# Ignore environment variables file
+.env
+
+# Ignore temporary files created by IDEs
+.idea/
+*.iml
+.vscode/

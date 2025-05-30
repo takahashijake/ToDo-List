@@ -1,0 +1,5 @@
+#!/bin/bash
+
+rm -f basic_fltk_app
+rm -f test.o
+
